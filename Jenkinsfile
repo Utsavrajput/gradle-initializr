@@ -6,7 +6,7 @@ pipeline {
     stage('Gradle'){
       steps {
         echo 'executing Gradle......'
-        wihtGradle() {
+        withGradle() {
           sh './gradlew -v'
         }
       }
