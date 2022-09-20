@@ -8,6 +8,7 @@ pipeline {
         echo 'executing Gradle......'
         withGradle() {
           sh './gradlew -v'
+          sh './gradlew init'
         }
       }
     }
